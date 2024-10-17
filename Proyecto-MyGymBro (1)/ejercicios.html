@@ -1,0 +1,105 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicios</title>
+        <link rel="stylesheet" href="estilo2.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <header>
+        <section class="seccion1">
+            <a href="index.html" class="logo">MyGymBro</a>
+        </section>
+    </header>
+<body>
+    <script>
+    window.alert ("Esta página es pura y exclusivamente con fines informativos y busca ayudar a los usuarios a aprender las maneras de realizar un ejercicio de forma eficiente. No se pretende crear ninguna rutina, en dicho caso recomendamos consultar a un profesional");
+    </script>
+    <section class="seccion-ejercicios">
+        <!--<div class="overlay">
+    <a href="Brazos.html"><img src="./MULTIMEDIA/images/brazos/brasSOS.png" alt="Imagen de un brazo" width="125" height="150"></a>
+    </div>
+    <div class="overlay">
+    <a href="PECHO-O-ABDOMEN.html"><img src="./MULTIMEDIA/images/abdomen/abdomen-inicio.png" alt="Imagen de un brazo" width="200" height="200"></a>
+    </div>
+    <div class="overlay">
+    <a href="Piernas.html"><img src="./MULTIMEDIA/images/piernas/piernas.png" alt="Imagen de un brazo" width="200" height="200"></a>
+    </div>    -->
+        <div class="tituloEj">
+        <H1>Seleccione que parte del cuerpo quiere entrenar</H1>
+        </div>
+        <div class="contenedorl-alineado"> 
+        <div class="menu-item">
+            <a href="#" class="menu-link">Brazo</a>
+            <ul class="submenu">
+                <li><a href="BICEP-EJER.html">Bíceps</a></li>
+                <li><a href="TRICEP-EJER.html"">Tríceps</a></li>
+                <li><a href="ANTEBRAZO-EJER.html"">Antebrazos</a></li>
+            </ul>
+        </div>
+        <div class="menu-item">
+            <a href="#" class="menu-link">Hombros</a>
+            <ul class="submenu">
+                <li><a href="HOMBROS-ANTERIOR-EJER.html">Deltoides Anterior</a></li>
+                <li><a href="HOMBROS-LATERAL-EJER.html">Deltoides Lateral</a></li>
+                <li><a href="HOMBROS-POSTERIOR-EJER.html">Deltoides Posterior</a></li>
+            </ul>
+        </div>
+        <div class="menu-item">
+            <a href="#" class="menu-link">Torso</a>
+            <ul class="submenu">
+                <li><a href="PECHO-EJER.html">Pecho</a></li>
+                <li><a href="ABDOMEN-EJER.html">Abdomen</a></li>
+            </ul>
+        </div>
+        <div class="menu-item">
+            <a href="#" class="menu-link">Espalda</a>
+            <ul class="submenu">
+                <li><a href="DORSALES-EJER.html">Dorsales</a></li>
+                <li><a href="TRAPECIOS-EJER.html">Trapecios</a></li>
+            </ul>
+        </div>
+        <div class="menu-item">
+            <a href="#" class="menu-link">Piernas</a>
+            <ul class="submenu">
+                <li><a href="PIERNAS-CUA-EJER.html">Cuádriceps</a></li>
+                <li><a href="PIERNAS-ESQUI-EJER.html">Isquiotibiales</a></li>
+                <li><a href="PIERNAS-GEME-EJER.html">Gemelos</a></li>
+                <li><a href="PIERNAS-GLUT-EJER.html">Glúteos</a></li>
+            </ul>
+        </div>
+        </div>
+    </section>     
+    <footer>
+        <p>&copy; 2024 MyGymBro. Todos los derechos reservados.</p>
+        <address>
+            <p>Email: contacto@mygymbro.com</p>
+            <p>Teléfono: +123 456 7890</p>
+            <p>Dirección: Av Victoria Aguirre 268, Puerti Iguazú Misiones, Argentina</p>
+        </address>
+    </footer>
+    <script>
+        const menuLinks = document.querySelectorAll('.menu-link');
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault(); // Evitar que el enlace navegue
+                const submenu = this.nextElementSibling; // Selecciona el submenú que sigue al enlace
+
+                // Cierra otros submenús
+                document.querySelectorAll('.submenu').forEach(item => {
+                    if (item !== submenu) {
+                        item.style.display = 'none';
+                    }
+                });
+
+                // Alterna la visibilidad del submenú
+                submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+
+</body>
+</html>
